@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+*/
+.toast-info-container {
+	color: black;
+}
