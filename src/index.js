@@ -796,7 +796,7 @@ class Page extends React.Component{
 		}else{
 			var section = "/tab?section="+this.props.section;
 		}
-		adr = "http://csci571hw7.us-east-1.elasticbeanstalk.com/"+this.state.source+section;
+		adr = "https://csci571hw7.us-east-1.elasticbeanstalk.com/"+this.state.source+section;
     	var xhr = new XMLHttpRequest();
   		xhr.open("GET",adr,true);
   		xhr.send();	
@@ -818,11 +818,11 @@ class Page extends React.Component{
 				}else{
 					var section = "/tab?section="+this.props.section;
 				}
-			adr = "http://csci571hw7.us-east-1.elasticbeanstalk.com/"+this.props.source+section;
+			adr = "https://csci571hw7.us-east-1.elasticbeanstalk.com/"+this.props.source+section;
 			}else if(this.props.display == "search"){
-				adr = "http://csci571hw7.us-east-1.elasticbeanstalk.com/"+this.props.source+"/search?key="+this.props.searchKey;
+				adr = "https://csci571hw7.us-east-1.elasticbeanstalk.com/"+this.props.source+"/search?key="+this.props.searchKey;
 			}else if(this.props.display == "article"){
-				adr = "http://csci571hw7.us-east-1.elasticbeanstalk.com/"+this.props.source+"/article?id="+this.state.id;
+				adr = "https://csci571hw7.us-east-1.elasticbeanstalk.com/"+this.props.source+"/article?id="+this.state.id;
 			}else if(this.props.display == "bookmark"){
 				this.setState({favorites: localStorage})
 				return
